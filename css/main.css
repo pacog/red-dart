@@ -47,6 +47,7 @@ html, body {
         .main-menu-item {
             display: inline-block;
             padding: 17px;
+            font-size: 24px;
         }
             .main-menu-item a, .main-menu-item a:visited {
                 color: #fff;
@@ -54,6 +55,7 @@ html, body {
             }
             .main-menu-item a:hover, .main-menu-item:active {
                 color: #d4321d;
+                text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
                 text-decoration: none;
             }
 
@@ -66,6 +68,7 @@ html, body {
 }
 .home .main-menu-item .action-home, .about .main-menu-item .action-about, .blog .main-menu-item .action-blog, .story .main-menu-item .action-story {
     color: #d4321d;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 
@@ -185,10 +188,11 @@ html, body {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+    font-size: 18px;
 }
 
     .home-feature h2 {
         color: #9a2820;
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 10px;
     }
