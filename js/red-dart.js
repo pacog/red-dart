@@ -1,27 +1,40 @@
 // Parallax module
 var ParallaxModule = (function() {
 
+    //Multiplier for the X coordinate to be applied in each parallax layer depending on the body class
+    var bodyClassesX = {
+        "home": 0,
+        "story": -1,
+        "about": -3,
+        "blog": -2
+    };
+
 
     var parallaxLayers = [{
         "selector": ".parallax-bg-1",
         "initialY": 0,
-        "finalY": 0
+        "finalY": 0,
+        "xStep": 2
     }, {
         "selector": ".parallax-bg-2",
         "initialY": 30,
-        "finalY": 25
+        "finalY": 25,
+        "xStep": 4
     }, {
         "selector": ".parallax-bg-3",
         "initialY": 34,
-        "finalY": 0
+        "finalY": 0,
+        "xStep": 6
     }, {
         "selector": ".parallax-bg-4",
         "initialY": 44,
-        "finalY": 10
+        "finalY": 10,
+        "xStep": 8
     }, {
         "selector": ".parallax-bg-ufo",
         "initialY": 10,
-        "finalY": 0
+        "finalY": 0,
+        "xStep": 5
     }];
     
     var parallaxObjects = [];
@@ -47,12 +60,23 @@ var ParallaxModule = (function() {
     var updateLayers = function() {
 
         var scrollRatio = getScrollRatio();
+        var menuXMultiplier = getMenuMultiplier();
         for (var i=0; i<parallaxObjects.length; i++) {
-            // Rotate div
             var newY = parallaxObjects[i].config.initialY + (parallaxObjects[i].config.finalY - parallaxObjects[i].config.initialY)*scrollRatio;
-            parallaxObjects[i].element.css('transform', 'translate(0, ' + newY + '%)');
+            var newX = parallaxObjects[i].config.xStep*menuXMultiplier;
+            parallaxObjects[i].element.css('transform', 'translate(' + newX + '%, ' + newY + '%)');
         }
     };
+    
+    var getMenuMultiplier = function () {
+        var body = $("body");
+        for (className in bodyClassesX) {
+            if(body.hasClass(className)) {
+                return bodyClassesX[className];
+            }
+        }
+        return 0;
+    }
     
     var createScrollListener = function() {
         mainContainer.scroll(updateLayers);
@@ -71,7 +95,8 @@ var ParallaxModule = (function() {
     };
     
     return {
-        init : init
+        init : init,
+        updateLayers: updateLayers
     };
 
 })(); 
@@ -103,6 +128,7 @@ var menuClicked = function(event) {
         if (newSection) {
             $("body").removeClass(actualSection).addClass(newSection);
             actualSection = newSection;
+            ParallaxModule.updateLayers();
         }
     }
 };
