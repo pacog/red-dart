@@ -149,22 +149,22 @@ html, body {
 
         @-webkit-keyframes ufo1anim {
           0%   { -webkit-transform: translate(-20,0); }
-          50%  { -webkit-transform: translate(130%,0); }
+          50%  { -webkit-transform: translate(160%,0); }
           100% { -webkit-transform: translate(-20,0); }
         }
         @-moz-keyframes ufo1anim {
           0%   { -moz-transform: translate(-20,0); }
-          50%  { -moz-transform: translate(130%,0); }
+          50%  { -moz-transform: translate(160%,0); }
           100% { -moz-transform: translate(-20,0); }
         }
         @-o-keyframes ufo1anim {
           0%   { -o-transform: translate(-20,0); }
-          50%  { -o-transform: translate(130%,0);}
+          50%  { -o-transform: translate(160%,0);}
           100% { -o-transform: translate(-20,0); }
         }
         @keyframes ufo1anim {
           0%   { transform: translate(-20,0); }
-          50%  { transform: translate(130%,0); }
+          50%  { transform: translate(160%,0); }
           100% { transform: translate(-20,0); }
         }
 
