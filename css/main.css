@@ -74,9 +74,16 @@ html, body {
 
 /** Footer */
 .footer {
-    margin-top: 20px;
     text-align: center;
 }
+    .footer-content {
+        margin: 20px 0 10px 0;
+        padding: 12px;
+        border-radius: 8px;
+        display: inline-block;
+        background: black;
+        color: white;
+    }
 
 /** Parallax */
 .parallax-container {
