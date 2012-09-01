@@ -1,0 +1,194 @@
+/** Skeleton */
+html, body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: 'digitalstrip', Helvetica, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.page-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.logo {
+    height: 455px;
+    margin-top: 40px;
+    background: url("img/red-dart-logo.png") 50% 50% no-repeat;
+}
+
+/** General **/
+.align-center {
+    text-align: center;
+}
+
+
+/** Menu */
+.main-menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 150;
+}
+    .main-menu-items {
+        float: right;
+        height: 65px;
+        background: url("img/red-dart-menu-bg.png") 50% 50% no-repeat;
+        width: 454px;
+        text-align: center;
+    }
+        .main-menu-item {
+            display: inline-block;
+            padding: 17px;
+        }
+            .main-menu-item a, .main-menu-item a:visited {
+                color: #fff;
+                text-decoration: none;
+            }
+            .main-menu-item a:hover, .main-menu-item:active {
+                color: #d4321d;
+                text-decoration: none;
+            }
+
+/** Sections hiding and showing */
+.section-home, .section-about, .section-blog, .section-story {
+    display: none;
+}
+.home .section-home, .about .section-about, .blog .section-blog, .story .section-story {
+    display: block;
+}
+.home .main-menu-item .action-home, .about .main-menu-item .action-about, .blog .main-menu-item .action-blog, .story .main-menu-item .action-story {
+    color: #d4321d;
+}
+
+
+/** Footer */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/** Parallax */
+.parallax-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+    .parallax-bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -webkit-transition: -webkit-transform 1s ease-out;
+        -moz-transition: -moz-transform 1s ease-out;
+        -o-transition: -o-transform 1s ease-out;
+        transition: transform 1s ease-out;
+    }
+        .parallax-bg-1 {
+            background: url("img/red-dart-bg-1.jpg") 0 0 no-repeat transparent;
+            background-size: cover;
+            z-index: 5;
+        }
+        .parallax-bg-2 {
+            background: url("img/red-dart-bg-2.png") 0 0 no-repeat transparent;
+            background-size: cover;
+            z-index: 10;
+            top: 20%;
+        }
+        .parallax-bg-3 {
+            background: url("img/red-dart-bg-3.png") 0 0 no-repeat transparent;
+            background-size: cover;
+            z-index: 20;
+            top: 77%;
+        }
+        .parallax-bg-4 {
+            background: url("img/red-dart-bg-4.png") 0 0 no-repeat;
+            background-size: cover;
+            z-index: 30;
+            top: 50%;
+        }
+        .parallax-bg-ufo {
+            z-index: 15;
+        }
+
+/** UFO */
+.ufo {
+    position: absolute;
+}
+    .ufo1 {
+        width: 64px;
+        height: 39px;
+        background: url("img/ufo1.png") 0 0 no-repeat;
+        top: 40%;
+        left: 0;
+        z-index: 15;
+        
+        -webkit-animation: ufo1anim 50s infinite linear; /* Safari 5, Chrome */
+        -moz-animation: ufo1anim 50s infinite linear; /* Firefox 5-15 */
+        -o-animation: ufo1anim 50s infinite linear; /* Opera 12+ */
+        animation: ufo1anim 50s infinite linear; /* Safari 5, Chrome, Firefox 16+ */
+    }
+
+        @-webkit-keyframes ufo1anim {
+          0%   { -webkit-transform: translate(0,0); }
+          50%  { -webkit-transform: translate(100%,0); }
+          100% { -webkit-transform: translate(0,0); }
+        }
+        @-moz-keyframes ufo1anim {
+          0%   { -moz-transform: translate(0,0); }
+          50%  { -moz-transform: translate(100%,0); }
+          100% { -moz-transform: translate(0,0); }
+        }
+        @-o-keyframes ufo1anim {
+          0%   { -o-transform: translate(0,0); }
+          50%  { -o-transform: translate(100%,0);}
+          100% { -o-transform: translate(0,0); }
+        }
+        @keyframes ufo1anim {
+          0%   { transform: translate(0,0); }
+          50%  { transform: translate(100%,0); }
+          100% { transform: translate(0,0); }
+        }
+
+/** Home section */
+.home-video {
+    text-align: center;
+}
+.home-appstore {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+    .appstore-button {
+        display: inline-block;
+        width: 189px;
+        height: 60px;
+        background: url("img/app-store-button.png") 50% 50% no-repeat;
+    }
+.home-feature {
+    background: url("img/red-dart-feature-bg.png") 50% 50% no-repeat;
+    width: 239px;
+    height: 274px;
+    display: inline-block;
+    padding: 24px 40px 47px 17px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+    .home-feature h2 {
+        color: #9a2820;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
