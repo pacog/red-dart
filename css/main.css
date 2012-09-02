@@ -55,7 +55,7 @@ html, body {
             }
             .main-menu-item a:hover, .main-menu-item:active {
                 color: #d4321d;
-                text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+                text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
                 text-decoration: none;
             }
 
@@ -68,7 +68,7 @@ html, body {
 }
 .home .main-menu-item .action-home, .about .main-menu-item .action-about, .blog .main-menu-item .action-blog, .story .main-menu-item .action-story {
     color: #d4321d;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
 }
 
 
