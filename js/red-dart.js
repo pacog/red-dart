@@ -127,7 +127,8 @@ var assignMenuHandlers = function() {
 
 var menuClicked = function(event) {
 
-    var srcElement = $(event.srcElement).closest(".js-menu-link");
+    var originalElement = event.srcElement || event.target;
+    var srcElement = $(originalElement).closest(".js-menu-link");
     if (srcElement && (srcElement.length === 1)) {
         var newSection = srcElement.data("target-section");
         if (newSection) {
