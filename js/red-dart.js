@@ -101,18 +101,23 @@ var ParallaxModule = (function() {
 
 })(); 
 
-
-
-
-
-
-
 var actualSection = "home";
 
 var init = function() {
 
     assignMenuHandlers();
     ParallaxModule.init();
+    //getRssFeed();
+};
+
+var getRssFeed = function(){
+    //TODO
+    $('#feed-container').FeedEk({
+        FeedUrl : 'http://rss.cnn.com/rss/edition.rss',
+        MaxCount : 5,
+        ShowDesc : true,
+        ShowPubDate:true
+    });
 };
 
 var assignMenuHandlers = function() {
