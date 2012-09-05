@@ -23,6 +23,16 @@ html, body {
     background: url("img/red-dart-logo.png") 50% 50% no-repeat;
 }
 
+.logo-pilpil {
+    display: inline-block;
+    width: 181px;
+    height: 242px;
+    background: url("img/logo-pilpil.png") 50% 50% no-repeat;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    1px 1px 2px rgba(0, 0, 0, 0.75);
+    box-shadow:         1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
 /** General **/
 .align-center {
     text-align: center;
@@ -30,7 +40,24 @@ html, body {
 .clearfix {
     clear: both;
 }
-
+.mvm {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.mvl {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.mll {
+    margin-left: 16px;
+}
+.email {
+    font-family: Helvetica, Verdana, sans-serif;
+    color: #9A2820;
+}
+.highlight {
+    font-weight: bold;
+}
 /** Menu */
 .main-menu-container {
     position: absolute;
@@ -209,8 +236,8 @@ html, body {
         font-size: 25px;
         margin-bottom: 10px;
     }
-/** About section */
-.section-story-inner {
+/** Story section */
+.section-inner-bg {
     background: rgba(255,255,255, 0.6);
     border-radius: 8px;
     padding: 24px;
@@ -241,5 +268,15 @@ html, body {
             padding-top: 50px;
             padding-bottom: 20px;
         }
-
+/** About section */
+.section-about-footnote {
+    margin-top: 32px;
+}
+    .section-about-footnote-image {
+        float: left;
+        margin-right: 16px;
+    }
+    .section-about-footnote-text {
+        padding-top: 32px;
+    }
 
