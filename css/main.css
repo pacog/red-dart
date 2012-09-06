@@ -242,6 +242,11 @@ html, body {
     border-radius: 8px;
     padding: 24px;
 }
+    .no-rgba .section-inner-bg {
+        background: #fff;
+        border-radius: 8px;
+        padding: 24px;
+    }
     .section-story-inner p {
         font-size: 20px;
     }
