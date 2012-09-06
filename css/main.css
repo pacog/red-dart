@@ -99,8 +99,25 @@ html, body {
     color: #d4321d;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
 }
+/** Social buttons */
+.social-buttons-container {
+    text-align: center;
+}
+    .social-button {
+        display: inline-block;
+        position: relative;
+    }
+    .social-button:hover {
+        -webkit-transform: translate(0,-5px);
+        -moz-transform: translate(0,-5px);
+        -ms-transform: translate(0,-5px);
+        transform: translate(0,-5px);
 
-
+        -webkit-transition: -webkit-transform 0.2s ease-out;
+        -moz-transition: -moz-transform 0.2s ease-out;
+        -o-transition: -o-transform 0.2s ease-out;
+        transition: transform 0.2s ease-out;
+    }
 /** Footer */
 .footer {
     text-align: center;
@@ -184,24 +201,24 @@ html, body {
     }
 
         @-webkit-keyframes ufo1anim {
-          0%   { -webkit-transform: translate(-20,0); }
+          0%   { -webkit-transform: translate(-20%,0); }
           50%  { -webkit-transform: translate(160%,0); }
-          100% { -webkit-transform: translate(-20,0); }
+          100% { -webkit-transform: translate(-20%,0); }
         }
         @-moz-keyframes ufo1anim {
-          0%   { -moz-transform: translate(-20,0); }
+          0%   { -moz-transform: translate(-20%,0); }
           50%  { -moz-transform: translate(160%,0); }
-          100% { -moz-transform: translate(-20,0); }
+          100% { -moz-transform: translate(-20%,0); }
         }
         @-o-keyframes ufo1anim {
-          0%   { -o-transform: translate(-20,0); }
+          0%   { -o-transform: translate(-20%,0); }
           50%  { -o-transform: translate(160%,0);}
-          100% { -o-transform: translate(-20,0); }
+          100% { -o-transform: translate(-20%,0); }
         }
         @keyframes ufo1anim {
-          0%   { transform: translate(-20,0); }
+          0%   { transform: translate(-20%,0); }
           50%  { transform: translate(160%,0); }
-          100% { transform: translate(-20,0); }
+          100% { transform: translate(-20%,0); }
         }
 
 /** Home section */
