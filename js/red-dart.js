@@ -107,7 +107,7 @@ var init = function() {
 
     assignMenuHandlers();
     ParallaxModule.init();
-    twitterInit();
+    //twitterInit();
     //getRssFeed();
 };
 
