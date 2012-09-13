@@ -30,6 +30,9 @@
                  font-size: 22px;
              }
 
+    .page-content {
+        -webkit-overflow-scrolling: touch;
+    }
     /** Content: more margin bottom because of the menu */
     .page-content-inner {
         margin-bottom: 40px;
@@ -37,6 +40,10 @@
     /** Smaller video */
     .home-video {
         height: 173px;
+    }
+    /** TODO this can be done in a better way using the css fwk*/
+    .home-features .span_4, .home-features .span_6 {
+        width: 100%;
     }
     .section-story, .section-about, .section-blog {
         margin-bottom: 16px;
