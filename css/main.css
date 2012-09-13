@@ -224,6 +224,8 @@ html, body {
 /** Home section */
 .home-video {
     text-align: center;
+    height: 428px;
+    width: 100%;
 }
 .home-appstore {
     text-align: center;
