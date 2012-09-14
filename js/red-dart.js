@@ -123,7 +123,11 @@ var getRssFeed = function(){
 
 var assignMenuHandlers = function() {
 
-    $(".js-menu").on("click", menuClicked);
+    var eventType = "click";
+    if (Modernizr.touch) {
+        eventType = "touchend";
+    }
+    $(".js-menu").on(eventType, menuClicked);
 };
 
 var menuClicked = function(event) {
