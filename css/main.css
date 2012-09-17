@@ -235,8 +235,32 @@ html, body {
     .appstore-button {
         display: inline-block;
         width: 189px;
-        height: 60px;
-        background: url("img/app-store-button.png") 50% 50% no-repeat;
+        height: 62px;
+        margin: 0 6px;
+    }
+    .appstore-button-iphone {
+        background: url("img/app-store-button-iphone.png") 50% 50% no-repeat;
+    }
+    .appstore-button-iphone:hover {
+        background: url("img/app-store-button-iphone-hover.png") 50% 50% no-repeat;
+    }
+    .appstore-button-ipad {
+        background: url("img/app-store-button-ipad.png") 50% 50% no-repeat;
+    }
+    .appstore-button-ipad:hover {
+        background: url("img/app-store-button-ipad-hover.png") 50% 50% no-repeat;
+    }
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        .appstore-button-ipad {
+            display: none;
+        }
+    }
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        .appstore-button-iphone {
+            display: none;
+        }
     }
 .home-feature {
     background: url("img/red-dart-feature-bg.png") 50% 50% no-repeat;
